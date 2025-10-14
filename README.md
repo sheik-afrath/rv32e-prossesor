@@ -87,7 +87,7 @@ Follow these instructions to simulate the processor on your local machine.
 # Example console output from the testbench
 # (Your simulator will produce similar output)
 
-$display("  ADDI x3, x0, 5");
-$display("  ADD  x4, x3, x3");
-$display("  SLT  x5, x3, x4");
+ADDI x3, x0, 5
+ADD  x4, x3, x3
+SLT  x5, x3, x4
 ...
