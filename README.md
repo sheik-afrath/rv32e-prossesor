@@ -56,6 +56,8 @@ The ALU and instruction decoder currently support a subset of the RV32E ISA, inc
 * **B-Type:** `BEQ`, `BNE`, `BLT`, `BGE`
 
 ## 📁 Directory Structure
+
+```
 .
 ├── ALU.v
 ├── Imem.v
@@ -64,6 +66,7 @@ The ALU and instruction decoder currently support a subset of the RV32E ISA, inc
 ├── register_file.v
 ├── rv32e_main.v        # Top-level module
 └── rv32e_tb.v          # Testbench
+```
 
 ## 🚀 Getting Started
 
