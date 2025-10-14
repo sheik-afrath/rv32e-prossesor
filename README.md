@@ -56,3 +56,35 @@ The ALU and instruction decoder currently support a subset of the RV32E ISA, inc
 * **B-Type:** `BEQ`, `BNE`, `BLT`, `BGE`
 
 ## 📁 Directory Structure
+.
+├── ALU.v
+├── Imem.v
+├── insDecoder.v
+├── program_counter.v
+├── register_file.v
+├── rv32e_main.v        # Top-level module
+└── rv32e_tb.v          # Testbench
+
+## 🚀 Getting Started
+
+Follow these instructions to simulate the processor on your local machine.
+
+### Prerequisites
+
+* A Verilog simulator (e.g., ModelSim, Vivado Simulator, Verilator, or any other).
+
+### Simulation
+
+1.  **Set up your simulation environment:** Create a new project in your preferred EDA tool.
+2.  **Add the source files:** Add all the `.v` files to the project.
+3.  **Set the testbench:** Designate `rv32e_tb.v` as the top-level module for simulation.
+4.  **Run the simulation:** Execute the simulation. The testbench will apply a clock and reset signal, and the console will display the decoded instructions and register values as the pre-loaded program in `Imem.v` runs.
+
+```sh
+# Example console output from the testbench
+# (Your simulator will produce similar output)
+
+$display("  ADDI x3, x0, 5");
+$display("  ADD  x4, x3, x3");
+$display("  SLT  x5, x3, x4");
+...
