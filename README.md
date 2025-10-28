@@ -1,7 +1,5 @@
 # 32-bit RISC-V RV32E Processor Core
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
 A simple, single-cycle 32-bit processor that implements the RV32E instruction set architecture. This project was built from scratch in Verilog and serves as a practical demonstration of fundamental computer architecture concepts.
 
 ---
@@ -82,12 +80,3 @@ Follow these instructions to simulate the processor on your local machine.
 2.  **Add the source files:** Add all the `.v` files to the project.
 3.  **Set the testbench:** Designate `rv32e_tb.v` as the top-level module for simulation.
 4.  **Run the simulation:** Execute the simulation. The testbench will apply a clock and reset signal, and the console will display the decoded instructions and register values as the pre-loaded program in `Imem.v` runs.
-
-```sh
-# Example console output from the testbench
-# (Your simulator will produce similar output)
-
-ADDI x3, x0, 5
-ADD  x4, x3, x3
-SLT  x5, x3, x4
-...
